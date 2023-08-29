@@ -2,7 +2,8 @@ import { ThemeProvider, CssBaseline } from '@mui/material';
 import { Routes, Route } from 'react-router';
 import './App.css';
 import { theme } from './common/theme';
-import Home from './Home';
+import Home from './components/Home';
+import MultipleChoice from './components/MultipleChoice';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <CssBaseline />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/multi' element={<MultipleChoice />} />
       </Routes>
     </ThemeProvider>
   );
